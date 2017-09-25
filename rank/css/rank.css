@@ -1,0 +1,275 @@
+body{
+	background: #f1f1f1;
+}
+.light{
+	color: #1d82d2;
+}
+.margin-bottom{
+	height: 1.0rem;
+	background: #f1f1f1;
+}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 19.2rem;
+	background: url(../img/aijys_grade_bg.png) no-repeat;
+	background-size:100%;
+	color: #fff;
+}
+.banner>*{
+	text-align: center;
+}
+.banner span{
+	font-weight: bold;
+}
+.banner h1{
+	font-size:1.5rem;
+	padding-top:2.5rem;
+	margin-bottom: 1.0rem
+}
+.banner h1 span{
+	font-size: 1.9rem;
+}
+.banner h2{
+	font-size: 2.1rem;
+	margin-bottom: 1rem
+}
+.banner h2 span{
+	font-size: 5.3rem
+}
+.banner p{
+	font-size: 1.3rem;
+}
+.banner p span{
+	font-size: 2.1rem;
+}
+.progress{
+	position: relative;
+	background: #fff;
+	height: 10.8rem;
+	margin-bottom: 1.0rem;
+}
+.pro-wrap{
+	width: 26.5rem;
+	height: 2rem;
+	position: absolute;
+	left:0;
+	top:0;
+	right: 0;
+	bottom:0;
+	margin:auto;
+}
+.pro-wrap>span{
+	display: inline-block;
+	width: 6.3rem;
+	height: 0.6rem;
+	background: #f1f1f1;
+	margin-right: 0.02rem;
+}
+.pro-wrap>span:first-of-type{
+	border-radius: 5rem 0 0 5rem;
+}
+.pro-wrap>span:last-of-type{
+	border-radius:0 5rem 5rem 0
+}
+.begin{display: inline-block;}
+.begin,.one,.two,.three,.four{
+	position: relative;
+}
+.begin:after,.one:after,.two:after,.three:after,.four:after{
+	position: absolute;
+	content:"";
+	font-size: 1.1rem;
+	color:#666; 
+	right:-2rem;
+	bottom:-2rem;
+
+}
+.begin:after{
+	display: inline-block;
+	content: "艾灸学徒";
+	width: 4rem;
+	left: -1.8rem;
+	font-style: normal;
+}
+.one:after{
+	content: "艾灸达人";
+}
+.two:after{
+	content:"艾灸专家";
+}
+.three:after{
+	content:"艾灸教授";
+}
+.four:after{
+	content: "艾灸大师";
+}
+.one span ,.two span ,.three span ,.four span {
+	position: absolute;
+	left:0;
+	top:0;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+} 
+.end span{
+	border-radius: 0 5rem 5rem 0;
+}
+.end~span>span{
+	display: none;
+}
+.end~span p{
+	display: none;
+    position: absolute;
+    background: #dfebf4;
+    font-size: 1.0rem;
+    color: #888;
+    width: 9.4rem;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    top: -4rem;
+}
+.end~span p:after{
+	position: absolute;
+	display: inline-block;
+	content: "";
+	border:0.6rem solid #fff;
+	border-top:0.6rem solid #dfebf4;
+	top:2.3rem;
+	left: 4.5rem;
+}
+.one span {
+	background: linear-gradient(#88caff, #60aeeb);
+	/*border-radius: 5rem 0 0 5rem;*/
+	border-radius: 5rem;
+}
+.two span {
+	background: linear-gradient(#3f97dc, #2783cd);
+}
+.three span {
+	background: linear-gradient(#0f71bf, #0364b1);
+}
+.four span{
+	background: linear-gradient( #014f8c, #013d6d);
+}
+.privilege{
+	padding: 0 1.8rem;
+	background: #fff;
+}
+.privilege span{
+	color: #999;
+}
+.pri-tit,.pri-cont{
+	background: #fff;
+}
+.pri-cont{
+	padding-left: 2.5rem;
+	padding-bottom: 2.0rem;
+}
+.pri-tit{
+	padding: 0 1.5rem;
+}
+.pri-tit span{
+	display: inline-block;
+	width: 100%;
+	font-size: 1.4rem;
+	line-height: 5.0rem;
+	border-bottom:0.1rem solid #ededed;
+}
+.pri-tit h4{
+	font-size: 1.6rem;
+	color: #333;
+	height: 5.0rem;
+	line-height: 5.0rem;
+}
+.pri-tit h5{
+	position: relative;
+	font-size: 1.4rem;
+	padding-bottom: 1.6rem;
+}
+.pri-tit h5 i{
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.3rem;
+	
+	border-radius: 50%;
+	background: #1d82d2;
+	margin-right: 1rem;
+}
+.pri-cont dt{
+	position: relative;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	font-size: 1.7rem;
+}
+.pri-cont dt:before{
+	position: absolute;
+	left:-3.5rem;
+	content: "";
+	width: 3.0rem;
+	height: 3.0rem;
+	background: url(../img/aijys_grade_icon_yellow.png);
+	background-size:100%;
+}
+.pri-cont dt:last-of-type:before{
+	background: url(../img/aijys_grade_icon_grey.png);
+	background-size:100%;
+}
+.pri-cont dd{
+	font-size: 1.4rem;
+	color:#555;
+	min-height: 2.4rem;
+	line-height: 2.4rem;
+}
+.pri-cont dd span{
+	display: inline-block;
+	padding-top:0.4rem;
+}
+@media (max-width: 414px){
+	.banner{
+		height: 21rem;
+	}
+	.end+span p{
+		left: 0;
+	}
+}
+@media (max-width: 375px){
+	.banner{
+		height: 19rem;
+	}
+	.end+span p{
+		left: -1rem;
+	}
+}
+@media (max-width: 360px){
+	.pro-wrap{
+		width:21.5rem;
+	}
+	.pro-wrap>span{
+		width: 5.0rem;
+	}
+	.end+span p{
+		width: 8.4rem;
+		font-size:0.7rem;
+	}
+}
+@media (max-width: 320px){
+	.banner{
+		height: 16rem;
+	}
+	.pro-wrap{
+		width:22.5rem;
+	}
+	.pro-wrap>span{
+		width: 5.3rem;
+	}
+	.end+span p{
+		width: 8.2rem;
+		font-size:0.6rem;
+	}
+	.end+span p:before{
+		left: 3.8rem;
+	}
+}

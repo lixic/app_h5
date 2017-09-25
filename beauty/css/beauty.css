@@ -1,0 +1,123 @@
+body{
+	background: #f1f1f1;
+}
+.main>*{
+	background: #fff;
+}
+.main>.intro,.main>h2,.main>section{
+	padding-left:1.2rem;
+	padding-right: 1.2rem;
+}
+.intro span,section span{
+	display: inline-block;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	font-size:1.2rem;
+	color: #8b8b8b;
+}
+section h3,section h4{
+	font-size:1.5rem;
+	height: 3.8rem;
+	line-height: 3.8rem;
+}
+.banner{
+	position: relative;
+}
+.banner i{
+	position: absolute;
+	left:1.0rem;
+	top:1.0rem;
+	display: inline-block;	
+	font-style: normal;
+	color: #fff;
+	font-size: 2.8rem;
+	width: 2rem;
+	height: 2rem;
+	background: url(../img/ajys_detailpage_return.png) no-repeat;
+	background-size:100%;
+}
+.banner img{
+	width: 100%;
+}
+.intro{
+	position: relative;
+	margin-bottom: 0.5rem;
+	padding-top: 1.4rem;
+}
+.intro h2{
+	font-size: 1.6rem;
+}
+.intro p{
+	position: absolute;
+	background: #fff;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 2rem;
+	display: none;
+}
+.intro p:first-of-type{
+	padding-top:1.5rem;
+	padding-bottom: 5rem;
+	padding-right: 1.2rem;
+	text-align: justify;
+}
+.intro button{
+	float: right;
+	border: none;
+	background: none;
+	font-size: 1.4rem;
+	color: #999;
+	width: 5.8rem;
+	height: 2.0rem;
+	text-align: right;
+}
+.intro button{
+	outline: none;
+}
+.intro button i{
+	display: inline-block;
+	margin-left: 0.5rem;
+	font-size: 1.3rem;
+}
+.main>h2{
+	height: 4rem;
+	line-height:4rem;
+	border:1px solid #f4f4f4;
+}
+section{
+	margin-bottom: 0.2rem
+}
+section h3 a{
+	float: right;
+	margin-top:0.8rem;
+	text-align: center;
+	font-size:1.2rem;
+	width: 6.8rem;
+	height: 2.0rem;
+	line-height: 2.0rem;
+	color: #69a3dd;
+	border:1px solid #b4d5f0;
+	border-radius: 4px;
+}
+section p{
+	font-size: 1.4rem;
+	color: #333;
+	line-height: 1.8rem;
+	text-align: justify;
+}
+section ul li{
+	float: left;
+	width: 32%
+}
+section ul li:nth-of-type(2){
+	margin:0 2%;
+}
+section ul li img{
+	width: 100%;
+}
+section i{
+	display: inline-block;
+	font-style: normal;
+	color: #8b8b8b;
+	margin:0 0.5rem;
+}

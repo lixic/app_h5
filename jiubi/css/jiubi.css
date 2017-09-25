@@ -1,0 +1,45 @@
+body{
+	background: #f1f1f1;
+}
+.main{
+	margin-top: 0.6rem;
+}
+.task,.achievement{
+	background: #f5f9fd;
+	padding: 0.9rem;
+}
+.task h2,.achievement h2{
+	height: 4.8rem;
+	line-height: 4.9rem;
+	font-size:1.7rem;
+	color: #1d82d2;
+	border-bottom: 1px solid #e8f0f9;
+}
+.task li,.achievement li{
+	height: 3.8rem;
+	line-height: 3.8rem;
+	font-size:1.4rem;
+	color: #4b6c8b;
+	border-bottom: 1px solid #e8f0f9;
+}
+.task li:last-of-type,.achievement li:last-of-type{
+	border-bottom: none;
+}
+.task{
+	margin-bottom: 0.6rem;
+}
+.task h2 i{
+	background: url(../img/ajys_mine_coin_daily@2x.png);
+}
+.achievement h2 i{
+	background: url(../img/ajys_mine_coin_money@2x.png);
+}
+.task h2 i,.achievement h2 i{
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	background-size: 100%;
+    position: relative;
+    top: 0.4rem;
+    margin-right:0.5rem;
+}

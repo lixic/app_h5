@@ -1,0 +1,131 @@
+.main{
+	width: 100%;
+	margin:0 auto;
+}
+.banner{
+	width: 100%;
+	background: url("../img/aijys_test_bg.png") no-repeat;
+	background-size:100%;
+	padding:3.5rem 2.5rem;
+	box-sizing: border-box;}
+.banner p{
+	color: #c6e2fd;
+	text-align: center;
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+#question{
+	box-sizing: border-box;
+	max-width: 624px;
+	margin:0 auto;
+	padding: 1.5rem 1rem;
+}
+#question h3{
+	font-size: 1.6rem;
+	color: #333;
+	border-bottom: 1px solid #f0f0f0;
+	display: table;
+	height: 6.5rem;
+	width: 100%;
+	cursor: pointer;
+}
+#question h3 div{
+	vertical-align: middle;
+	display: table-cell;
+
+}
+#question ol{
+	overflow: hidden;
+	width: 100%;
+	margin:0 auto;
+	padding: 1.6rem 0;
+	display: none;
+}
+#question ol#sex{
+	display: block;
+}
+#question ol li{
+	float: left;
+	width: 4.5rem;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	text-align:center;
+	font-size:1.6rem;
+	color: #999;
+	border-radius: 50%;
+	border:1px solid #f1f1f1;
+	margin-right: 1.2rem;
+	cursor: pointer;
+}
+#question ol li:last-of-type{
+	margin-right: 0;
+}
+#question ol li.checked{
+	background: #1d82d2;
+	color: #fff;
+	border-radius: 50%;
+}
+.ques-num{
+	display: block;
+	text-align: center;
+	color: #c8c8c8;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+.ques-num i{
+	font-style:normal;
+	font-size:1.6rem;
+}
+.ques-num i:first-of-type{
+	color: #3083d1;
+}
+.ques-num i:last-of-type{
+	color: #c8c8c8
+}
+footer{
+	max-width: 624px;
+	margin:0 auto;
+	box-sizing: border-box;
+	padding-bottom: 1.5rem;
+}
+
+footer input[type="button"]{
+	display: block;
+	width:94%;
+	margin:0 auto;
+	height: 3.2rem;
+	background: #1d82d2;
+	color: #fff;
+	border-radius: 0.2rem;
+	border:none;
+	outline: none; /*解决提交框点击有边框的问题*/
+}
+footer input[type="button"]:focus{
+	border:none;
+}
+@media (max-width: 414px){
+	.banner{
+		height: 10.8rem;
+	}
+}
+@media (max-width: 375px){
+	.banner{
+		height: 9.8rem;
+	}
+}
+@media (max-width: 360px){
+	.banner{
+		height: 9.4rem;
+	}
+	#question ol li{
+		margin-right: 1.1rem;
+	}
+}
+@media (max-width: 320px){
+	.banner{
+		height: 8.3rem;
+	}
+	#question ol li{
+		margin-right: 0;
+	}
+}

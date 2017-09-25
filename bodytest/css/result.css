@@ -1,0 +1,170 @@
+body{
+	background: #fff;
+}
+.main{
+	width: 100%;
+	margin:0 auto;
+}
+.margin-bottom{
+	height: 0.8rem;
+	background: #f1f1f1;
+}
+/*banner*/
+.banner{
+	position: relative;
+	width: 100%;
+	height: 19.2rem;
+	background: url(../img/aijys_result_bg.png) no-repeat;
+	background-size:100%;
+	color: #fff;
+	text-align: center;
+	padding-top:1.5rem;
+}
+.banner h1{
+	margin-top:1.2rem;
+	font-size: 1.6rem;
+	color: #92c8ff;
+	margin-bottom: 0.3rem;
+}
+.banner h2{
+	font-size:2.3rem;
+}
+.banner #all-result{
+	position: absolute;
+	bottom: 0;
+	font-size: 1.3rem;
+	color: #e5e8f9;
+	text-align: center;
+	width: 100%;
+	line-height: 1.8rem;
+	padding: 0.4rem 1rem;
+    box-sizing: border-box;
+}
+/*tab*/
+.tab{
+	margin-top: 2.4rem;
+}
+.tab>div:first-of-type{
+	width: 89%;
+	margin:0 auto;
+	overflow: hidden;
+}
+.tab>div:first-of-type a{
+	width: 45%;
+	color: #1d82d2;
+	font-size:1.5rem;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	text-align: center;
+	border:0.1rem solid #92c2e8;
+	border-radius: 0.6rem;
+}
+.tab>div:first-of-type a:first-of-type{
+	float: left;
+}
+.tab>div:first-of-type a:last-of-type{
+	float: right;
+}
+.tab>div:nth-of-type(2){
+	margin-top: 2.0rem;
+	padding: 1rem;
+}
+.tab>div:nth-of-type(2) h3,.tab>div:nth-of-type(2) button{
+	float: left;
+	margin-bottom: 1.2rem;
+}
+/*解决button点击会有边框的问题*/
+.tab>div:nth-of-type(2) button:focus{
+	outline:0;
+} 
+.tab>div:nth-of-type(2) h3{
+	position: relative;
+	font-size:1.8rem;
+	font-family: "黑体";
+	padding-left: 2.3rem;
+	line-height: 2.2rem;
+}
+.tab>div:nth-of-type(2) h3:before{
+	position: absolute;
+	content: "!";
+	font-size: 1.6rem;
+	left: -0.2rem;
+    top: 0.2rem;
+    color:#1975cf ;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    border:0.15rem solid #1975cf;
+    border-radius: 50%;
+}
+.tab>div:nth-of-type(2) p{
+	clear: both;
+	font-size:1.4rem;
+	color: #333;
+	line-height: 2rem;
+	overflow: hidden;
+	text-overflow: hidden;
+}
+.tab>div:nth-of-type(2) button{
+	font-size:1.6rem;
+	color: #1d82d2;
+	background: none;
+	border:none;
+	border-bottom: 1px solid #1d82d2;
+	margin-left: 1.8rem;
+}
+.course {
+	padding: 1rem;
+}
+.course a{
+	color: #000;
+}
+.course h3{
+	font-size:1.8rem;
+	font-family: "黑体";
+	margin-bottom: 0.8rem;
+}
+.course .xuewei{
+	font-size: 1.4rem;
+	color: #666;
+	margin-bottom: 1.2rem;
+}
+.course .details{
+	position: relative;
+	padding-left: 1.3rem;
+	font-size: 1.3rem;
+	color: #333;
+}
+.course .details:before{
+	position: absolute;
+	content: "◎";
+	font-size: 3rem;
+	left: -0.2rem;
+    top: -1rem;
+}
+@media (min-width: 768px){
+	.banner{
+		height: 19.2rem;
+	}
+}
+@media (max-width: 414px){
+	.banner{
+		height: 12.5rem;
+	}
+}
+@media (max-width: 375px){
+	.banner{
+		height: 11.2rem;
+	}
+}
+@media (max-width: 360px){
+	.banner{
+		height: 10.6rem;
+	}
+}
+@media (max-width: 320px){
+	.banner{
+		height: 9.3rem;
+	}
+}

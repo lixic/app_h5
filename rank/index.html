@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>我的等级</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/rank.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/rank.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="banner">
+			<h1>当前等级：<span id="rank_type"><!-- 艾灸教授 --></span></h1>
+			<h2>当前等级累计艾灸&emsp;<span id="continuity"><!-- 12 --></span>天</h2>
+			<p>距离下一等级时间还剩&emsp;<span class="rest-days"><!-- 1 --></span>&emsp;天</p>
+		</div>
+		<div class="progress">
+			<div class="pro-wrap">
+				<i class="begin"></i>
+				<span class="one end" data-time=""><span></span></span>
+				<span class="two" data-time=""><span></span></span>
+				<span class="three" data-time=""><span></span><p>预计6月1号升级</p></span>
+				<span class="four" data-time=""><span></span></span>
+			</div>
+		</div>
+		<div class="pri-tit">
+			<span><!-- 间隔3天不艾灸则降回上个等级 --></span>
+			<h4>当前等级特权</h4>
+			<h5 class="light"><!-- <i></i>一次性获得灸币300个！(不重复发放) --></h5>
+		</div>
+		<div class="margin-bottom"></div>
+		<section class="privilege container">
+			
+			
+			<div class="pri-cont">
+				<dl>
+					<dt class="light">艾灸学徒</dt>
+					<dd>注册用户</dd>
+					<dd>奖品：一次性获得灸币20个！</dd>
+
+					<dt class="light">艾灸达人</dt>
+					<dd>成为艾灸学徒后累计艾灸10天
+</dd>
+					<dd>奖品：一次性获得灸币300个！</dd>
+					<dd><span>达到该等级后，累计3天不艾灸则降回上个等级</span></dd>
+
+					<dt class="light">艾灸专家</dt>
+					<dd>成为艾灸专家后累计艾灸20天
+</dd>
+					<dd>奖品：每月18元艾绒片优惠券一张！</dd>
+					<dd><span>达到该等级后，累计5天不艾灸则降回上个等级</span></dd>
+
+					<dt class="light">艾灸教授</dt>
+					<dd>成为艾灸专家后累计艾灸60天
+</dd>
+					<dd>奖品：每月30元艾绒片优惠券一张！</dd>
+					<dd>&emsp;&emsp;&emsp;每月18元艾绒片优惠券一张！</dd>
+					<dd><span>达到该等级后，累计7天不艾灸则降回上个等级</span></dd>
+
+					<dt class="light">艾灸大师</dt>
+					<dd>达到艾灸教授后累计艾灸180天
+</dd>
+					<dd>奖品：以旧换新I9-4(仅一次)</dd>
+					<dd>&emsp;&emsp;&emsp;每月30元艾绒片优惠券一张！</dd>
+					<dd>&emsp;&emsp;&emsp;每月18元艾绒片优惠券一张！</dd>
+					<dd><span>达到该等级后，累计15天不艾灸则降回上个等级</span></dd>
+
+				</dl>
+			</div>
+		</section>
+	</div>
+	<!-- 脚本文件 -->
+	<script src="js/jquery.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/method.js"></script>
+	<script src="js/rank.js"></script>
+</body>
+</html>

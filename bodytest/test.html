@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>体质测试</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/test.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/method.js"></script>
+	<script src="js/test.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="banner">
+			<p>以下问题请根据你最近三个月的身体感受回答，孕妇及16岁以下人群不建议使用本测题</p>
+		</div>
+	</div>
+	<div id="question">
+		<ul>
+			<li>
+				<h2>请先选择性别再进行答题</h3>
+				<ol class="ques" id="sex">
+					<li class="checked">男</li>
+					<li>女</li>
+				</ol>
+				<h3><div>1.您容易疲乏吗？</div></h3>
+				<ol class="ques qixu" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>2.您容易气短（呼吸短促，接不上气）吗？</div></h3>
+				<ol class="ques qixu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>3.您容易心慌吗？</div></h3>
+				<ol class="ques qixu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>4.您容易头晕或站起时晕眩吗？</div></h3>
+				<ol class="ques qixu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>5.您比别人容易患感冒吗?</div></h3>
+				<ol class="ques qixu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>6.您喜欢安静、懒得说话吗？</div></h3>
+				<ol class="ques qixu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>7.您说话声音低弱无力吗?</div></h3>
+				<ol class="ques qixu" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>8.您活动量稍大就容易出虚汗吗？</div></h3>
+				<ol class="ques qixu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>9.您手脚发凉吗？</div></h3>
+				<ol class="ques yangxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>10.您胃脘部、背部或腰膝部怕冷吗？</div></h3>
+				<ol class="ques yangxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>11.您感到怕冷、衣服比别人穿得多吗？</div></h3>
+				<ol class="ques yangxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>12.您比一般人耐受不了寒冷(冬天的寒冷，夏天的冷空调、电扇等)吗？</div></h3>
+				<ol class="ques yangxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>13.您比别人容易患感冒吗?</div></h3>
+				<ol class="ques yangxu" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>14.您吃（喝）凉的东西会感到不舒服或者怕吃（喝）凉东西吗？</div></h3>
+				<ol class="ques yangxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>15.您受凉或吃（喝）凉东西后，容易腹泻（拉肚子）吗?</div></h3>
+				<ol class="ques yangxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>16.您感到手脚心发热吗？</div></h3>
+				<ol class="ques yinxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>17.您感觉身体脸上发热吗？</div></h3>
+				<ol class="ques yinxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>18.您皮肤或口唇干吗？</div></h3>
+				<ol class="ques yinxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>19.您口唇的颜色比一般人红吗？</div></h3>
+				<ol class="ques yinxu" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>20.您容易便秘或大便干燥吗?</div></h3>
+				<ol class="ques yinxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>21.您面部两颧潮红或偏红吗？</div></h3>
+				<ol class="ques yinxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>22.您感到眼睛干涩吗?</div></h3>
+				<ol class="ques yinxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>23.您感到口干咽燥、总想喝水吗？</div></h3>
+				<ol class="ques yinxu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>24.您感到胸闷或腹部胀满吗？</div></h3>
+				<ol class="ques tanshi">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>25.您感到身体沉重不轻松或不爽快吗？</div></h3>
+				<ol class="ques tanshi" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>26.您腹部肥满松软吗？</div></h3>
+				<ol class="ques tanshi">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>27.您有额部油脂分泌多的现象吗？</div></h3>
+				<ol class="ques tanshi" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>28.您上眼睑比别人肿（上眼睑有轻微隆起的现象）吗?</div></h3>
+				<ol class="ques tanshi">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>29.您嘴里有粘粘的感觉吗？</h3>
+				<ol class="ques tanshi">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>30.您平时痰多，特别是咽喉部总感到有痰堵着吗?</div></h3>
+				<ol class="ques tanshi">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>31.您舌苔厚腻或有舌苔厚厚的感觉吗？</div></h3>
+				<ol class="ques tanshi" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>32.您面部或鼻部有油腻感或者油亮发光吗？</div></h3>
+				<ol class="ques shire">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>33.您容易生痤疮或疮疖吗？</div></h3>
+				<ol class="ques shire">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>34.您感到口苦或嘴里有异味吗？</div></h3>
+				<ol class="ques shire">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>35.您大便粘滞不爽、有解不尽的感觉吗？</div></h3>
+				<ol class="ques shire">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>36.您小便时尿道有发热感、尿色浓（深）吗?</div></h3>
+				<ol class="ques shire">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3 id="special"><div>37.您的阴囊部位潮湿吗？</div></h3>
+				<ol class="ques shire" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>38.您的皮肤在不知不觉中会出现青紫瘀斑（皮下出血）吗？</div></h3>
+				<ol class="ques xueyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>39.您两颧部有细微红丝吗？</h3>
+				<ol class="ques xueyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>40.您身体上有哪里疼痛吗？</div></h3>
+				<ol class="ques xueyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>41.您面色晦暗或容易出现褐斑吗？</div></h3>
+				<ol class="ques xueyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>42.您容易有黑眼圈吗?</div></h3>
+				<ol class="ques xueyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>43.您容易忘事（健忘）吗？</div></h3>
+				<ol class="ques xueyu" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>44.您口唇颜色偏黯吗?</div></h3>
+				<ol class="ques xueyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>45.您感到闷闷不乐、情绪低沉吗？</div></h3>
+				<ol class="ques qiyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>46.您容易精神紧张、焦虑不安吗？</div></h3>
+				<ol class="ques qiyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>47.您多愁善感、感情脆弱吗？</div></h3>
+				<ol class="ques qiyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>48.您容易感到害怕或受到惊吓吗？</div></h3>
+				<ol class="ques qiyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>49.您胁肋部或乳房胀痛吗?</div></h3>
+				<ol class="ques qiyu" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>50.您无缘无故叹气吗？</div></h3>
+				<ol class="ques qiyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>51.您咽喉部有异物感，且吐之不出、咽之不下吗?</div></h3>
+				<ol class="ques qiyu">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>52.您没有感冒时也会打喷嚏吗？</div></h3>
+				<ol class="ques tebing">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>53.您没有感冒时也会鼻塞、流鼻涕吗？</div></h3>
+				<ol class="ques tebing">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>54.您有因季节变化、温度变化或异味等原因而咳喘的现象吗？</div></h3>
+				<ol class="ques tebing">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>55.您容易过敏（对药物、食物、气味、花粉或在季节交替、气候变化时）吗？</div></h3>
+				<ol class="ques tebing" id="">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>56.您的皮肤容易起荨麻疹（风团、风疹块、风疙瘩）吗?</div></h3>
+				<ol class="ques tebing">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>57.您的皮肤因过敏出现过紫癜（紫红色瘀点、瘀斑）吗？</div></h3>
+				<ol class="ques tebing">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>58.您的皮肤一抓就红、并出现抓痕吗?</div></h3>
+				<ol class="ques tebing">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>59.您精力充沛吗？</div></h3>
+				<ol class="ques pinghe">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>60.您容易疲劳吗？</div></h3>
+				<ol class="ques pinghe">
+					<li data-score="5">没有</li>
+					<li data-score="4">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="2">经常</li>
+					<li data-score="1">总是</li>
+				</ol>
+				<h3><div>61.您说话声音低弱无力吗？</div></h3>
+				<ol class="ques pinghe" id="">
+					<li data-score="5">没有</li>
+					<li data-score="4">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="2">经常</li>
+					<li data-score="1">总是</li>
+				</ol>
+				<h3><div>62.您感到闷闷不乐、情绪低沉吗？</div></h3>
+				<ol class="ques pinghe">
+					<li data-score="5">没有</li>
+					<li data-score="4">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="2">经常</li>
+					<li data-score="1">总是</li>
+				</ol>
+				<h3><div>63.您比一般人耐受不了寒冷（冬天的寒冷、夏天冷空调、电扇等）吗?</div></h3>
+				<ol class="ques pinghe">
+					<li data-score="5">没有</li>
+					<li data-score="4">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="2">经常</li>
+					<li data-score="1">总是</li>
+				</ol>
+				<h3><div>64.您能适应外界自然和社会环境的变化吗？</div></h3>
+				<ol class="ques pinghe">
+					<li data-score="1">没有</li>
+					<li data-score="2">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="4">经常</li>
+					<li data-score="5">总是</li>
+				</ol>
+				<h3><div>65.您容易失眠吗?</div></h3>
+				<ol class="ques pinghe">
+					<li data-score="5">没有</li>
+					<li data-score="4">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="2">经常</li>
+					<li data-score="1">总是</li>
+				</ol>
+				<h3><div>66.您容易忘事（健忘）吗？</div></h3>
+				<ol class="ques pinghe">
+					<li data-score="5">没有</li>
+					<li data-score="4">很少</li>
+					<li data-score="3">有时</li>
+					<li data-score="2">经常</li>
+					<li data-score="1">总是</li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+	<footer>
+		<input type="button" value="提交测试" id="submit" >
+	</footer>
+</body>
+</html>
