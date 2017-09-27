@@ -7,6 +7,7 @@ html{
 }
 body{
 	font-size:1.2rem;
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
@@ -16,6 +17,12 @@ a,a:visited{
 }
 ul,ol,li{
 	list-style: none;
+}
+/*解决苹果手机button自带样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+-webkit-appearance: none;
+
 }
 .main{
 	max-width: 624px;

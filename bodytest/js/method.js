@@ -4,7 +4,7 @@
 		toAnalyse:function(resultsStr,token,callback){
 			$.ajax({
 			    type : "POST",
-			    url : "http://api-sandbox.jiudafu.com/user/body/analyse",
+			    url : docApi.Config.Submit_result_URL,
 			    data:{
 			    	auth:docApi.Config.auth,
 			    	token:token,
@@ -20,7 +20,7 @@
 		getResult:function(token,callback){
 			$.ajax({
 				type:"GET",
-				url:"http://api-sandbox.jiudafu.com/user/latest/result",
+				url:docApi.Config.Last_result_URL,
 				data:{
 					auth:docApi.Config.auth,
 					token:token
@@ -36,7 +36,7 @@
 			$.ajax({
 				// async:false,
 				type:"GET",
-				url:"http://api-sandbox.jiudafu.com/treat/plan/search",
+				url:docApi.Config.Xuewei_URL,
 				data:{
 					auth:docApi.Config.auth,
 					token:token,
@@ -53,7 +53,7 @@
 			$.ajax({
 				// async: false,
 			    type : "GET",
-			    url : "http://api-sandbox.jiudafu.com/user/body/results",
+			    url : docApi.Config.History_result_URL,
 			    data:{
 			    	auth:docApi.Config.auth,
 			    	token:token
@@ -65,24 +65,6 @@
 			    }
 			});
 			// return record;
-		},
-		// 我的等级获取数据
-		getRanks:function(){
-			var rankData=[];
-			$.ajax({
-				async: false,
-			    type : "GET",
-			    url : "http://api-sandbox.jiudafu.com/ajys/user/level",
-			    data:{
-			    	auth:docApi.Config.auth,
-			    	token:token
-			    },
-			    dataType:'json',
-			    success:function(data){
-			    	rankData=data.data;
-			    }
-			});
-			return rankData;
 		}
 	}
 	$.extend(true, docApi, acount);

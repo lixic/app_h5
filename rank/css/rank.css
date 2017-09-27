@@ -88,7 +88,7 @@ body{
 .begin:after{
 	display: inline-block;
 	content: "艾灸学徒";
-	width: 4rem;
+	width: 5rem;
 	left: -1.8rem;
 	font-style: normal;
 }
@@ -210,11 +210,11 @@ body{
 	content: "";
 	width: 3.0rem;
 	height: 3.0rem;
-	background: url(../img/aijys_grade_icon_yellow.png);
+	background: url(../img/aijys_grade_icon_grey.png);
 	background-size:100%;
 }
-.pri-cont dt:last-of-type:before{
-	background: url(../img/aijys_grade_icon_grey.png);
+.pri-cont dt.active:before{
+	background: url(../img/aijys_grade_icon_yellow.png);
 	background-size:100%;
 }
 .pri-cont dd{

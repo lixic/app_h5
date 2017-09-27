@@ -11,7 +11,7 @@ $(function(){
 	})
 	// 服务器请求错误友好提示
 	function error(){
-		$("body").html("<img src='../img/error.jpg' class='error'/>")
+		$("body").html("<img src='img/error.jpg' class='error'/>")
 	}
 	// 等级展示
 	function rankHTML(rank,days){
@@ -34,6 +34,8 @@ $(function(){
 			$(".one").find("span").css("width",(parseInt(days)/num)*100+"%");
 			rest_num=num-days;
 			$(".rest-days").html(rest_num);
+			$(".pri-cont dt").eq(0).addClass("active").prevAll("dt").addClass("active");
+
 		}else if(rank="艾灸达人"){
 
 			num=20;
@@ -43,6 +45,7 @@ $(function(){
 			$(".two").find("span").css("width",(parseInt(days)/num)*100+"%")
 			rest_num=num-days;
 			$(".rest-days").html(rest_num);
+			$(".pri-cont dt").eq(1).addClass("active").prevAll("dt").addClass("active");;
 		}else if(rank="艾灸专家"){
 			num=60;
 			$(".pri-tit h5").html(tequan[2]);
@@ -51,6 +54,7 @@ $(function(){
 			$(".three").find("span").css("width",(parseInt(days)/num)*100+"%")
 			rest_num=num-days;
 			$(".rest-days").html(rest_num);
+			$(".pri-cont dt").eq(2).addClass("active").prevAll("dt").addClass("active");;
 		}else if(rank="艾灸教授"){
 			num=180;
 			$(".pri-tit h5").html(tequan[3]);
@@ -59,12 +63,14 @@ $(function(){
 			$(".four").find("span").css("width",(parseInt(days)/num)*100+"%")
 			rest_num=num-days;
 			$(".rest-days").html(rest_num);
+			$(".pri-cont dt").eq(3).addClass("active").prevAll("dt").addClass("active");;
 		}else if(rank="艾灸大师"){
 			$(".pri-tit h5").html(tequan[4]);
 			$(".pri-tit span").html(jianji[3]);
 			// num=10;
 			// rest_num=num-days;
 			$(".rest-days").html(rest_num);
+			$(".pri-cont dt").eq(4).addClass("active").prevAll("dt").addClass("active");;
 		}
 		$(".pri-tit span").html()
 	}

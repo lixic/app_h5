@@ -2,9 +2,10 @@ $(function(){
 	var href = window.location.search;
 	//	获取token
 	var token = href.substring(href.indexOf("?token=") + 7, href.length);
-	if(token==""){
-		token="2636f17327cb14c743b4c99eb7b00a79";
-	}
+
+	$("#re_test").attr("href","test.html?token="+token);
+	$("#his_list").attr("href","record.html?token="+token);
+	
 	// 获取体质结果接口数据
 	docApi.getResult(token,function(data){
 	  	if(data.error!=0){
@@ -68,15 +69,18 @@ $(function(){
 	function quxueHTML(resultArr){
 		console.log(resultArr.length);
 		var xueweihtml="";
-		var jiu_href = "ajzbb:///"
+		var jiu_href = "ajzbb:///";
 		for(var i=0;i<resultArr.length;i++){
 			if(resultArr[i].xuewei==""){
 				resultArr[i].xuewei=resultArr[i].remark;
 			}
+			// 取穴位字符
+			var xueweiStr=resultArr[i].xuewei.replace(/[^\u4e00-\u9fa5|,]+/g,',');
+			xueweiStr=xueweiStr.substring(xueweiStr.length-1,1);
 			xueweihtml+="<div class='course'>"+
 							"<a href="+jiu_href+resultArr[i].id+">"+
 								"<h3>"+resultArr[i].name+"</h3>"+
-								"<p class='xuewei'>取穴："+resultArr[i].xuewei.replace(/[^\u4e00-\u9fa5|,]+/g,',')+"</p>"+
+								"<p class='xuewei'>取穴："+xueweiStr+"</p>"+
 							"</a>"+
 						"</div>";
 		}

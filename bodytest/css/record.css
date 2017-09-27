@@ -27,7 +27,7 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-.main .icon{
+/*.main .icon{
 	position: absolute;
 	display: inline-block;
 	font-style: normal;
@@ -40,4 +40,4 @@
 	height: 1.3rem;
 	background: url(../img/aijys_record_more.png) no-repeat;
 	background-size:100%;
-}
+}*/

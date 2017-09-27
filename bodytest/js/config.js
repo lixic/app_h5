@@ -10,4 +10,5 @@ docApi.Config={
 	Last_result_URL: API_URL + "user/latest/result", //最新测试结果接口
 	History_result_URL:API_URL +"user/body/results",//历史记录测试结果接口
 	Submit_result_URL:API_URL +"user/body/analyse",//提交测试结果接口
+	Xuewei_URL:API_URL+"treat/plan/search",//取穴接口
 }

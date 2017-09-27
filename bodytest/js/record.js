@@ -2,9 +2,9 @@ $(function(){
 	var href = window.location.search;
 	//	获取token
 	var token = href.substring(href.indexOf("?token=") + 7, href.length);
-	if(token==""){
-		token="2636f17327cb14c743b4c99eb7b00a79";
-	}
+	// if(token==""){
+	// 	token="2636f17327cb14c743b4c99eb7b00a79";
+	// }
 
 	// 获取接口取得历史记录
 	docApi.getHistory(token,function(data){
@@ -33,11 +33,10 @@ $(function(){
 		var recordHTML="";
 		console.log(record);
 		for(var i=0;i<record.length;i++){
-			recordHTML+="<li><a href=''>"+
+			recordHTML+="<li>"+
 				"<span class='record-time'>"+timeFormat(record[i].time)+"</span>"+
 				"<p class='record-type'>体质类型：<span>"+record[i].results+"</span></p>"+
-				"<i class='icon'></i>"+
-			"</a></li>";
+			"</li>";
 		}
 		$(".record").append(recordHTML);
 	}

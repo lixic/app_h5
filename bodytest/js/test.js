@@ -2,9 +2,10 @@ $(function(){
 	var href = window.location.search;
 	//	获取token
 	var token = href.substring(href.indexOf("?token=") + 7, href.length);
-	if(token==""){
-		token="2636f17327cb14c743b4c99eb7b00a79";
-	}
+	alert(token);
+	// if(token==""){
+	// 	token="2636f17327cb14c743b4c99eb7b00a79";
+	// }
 	const YES_RESULT = 1;
     const NO_RESULT = 0;
     const MAYBE_RESULT =2;
@@ -39,9 +40,9 @@ $(function(){
 	function chooseSex(){
 		$("#sex li").click(function(){
 			if($(this).html()=="男"){
-				$("#special").html("37.您的阴囊部位潮湿吗？");
+				$("#special").html("<div>37.您的阴囊部位潮湿吗？</div>");
 			}else{
-				$("#special").html("37.您带下色黄（白带颜色发黄）吗？")
+				$("#special").html("<div>37.您带下色黄（白带颜色发黄）吗？</div>")
 			}
 		});
 	}
@@ -88,10 +89,11 @@ $(function(){
 			console.log(resultsStr);
 			docApi.toAnalyse(resultsStr,token,function(data){
 				if(data.error!=0){
+					alert(data.error);
 					error();
 				}else{
 					console.log(data);
-	    			window.location.href="../bodytest/index.html"
+	    			window.location.href="../bodytest/index.html?token="+token
 				}
 			});
 		}else{

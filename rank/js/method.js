@@ -5,10 +5,10 @@
 			var rankData=[];
 			$.ajax({
 			    type : "GET",
-			    url : "http://api-sandbox.jiudafu.com/ajys/user/level",
+			    url : docApi.Config.My_rank_URL,
 			    data:{
 			    	auth:docApi.Config.auth,
-			    	token:"7d5a88fffb992801a90d5e6cabb3fc67"
+			    	token:token
 			    },
 			    dataType:'json',
 			    success:function(data){
